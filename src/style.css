@@ -1,0 +1,53 @@
+.turnOn:hover {
+  font-size: 11vh;
+  background-color: black;
+}
+
+.turnOff:hover {
+  font-size: 11vh;
+  background-color: #F6DB87;
+}
+
+.turnOn {
+  background-color: #7E7E7C;
+  color: #F9EDC3;
+  border: none;
+  flex: 1;
+  justify-content: space-around;
+  height: 20vh;
+  font-size: 10vh;
+  transition: all 0.25s ease;
+}
+
+.turnOff {
+  background-color: #F9EDC3;
+  color: #7E7E7C;
+  border: none;
+  flex: 1;
+  justify-content: space-around;
+  height: 20vh;
+  font-size: 10vh;
+  transition: all 0.25s ease;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 20vh;
+  margin: auto;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */

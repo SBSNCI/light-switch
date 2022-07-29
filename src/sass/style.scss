@@ -1,0 +1,53 @@
+$lightSwitchGrey: #7E7E7C;
+$lightSwitchYellow: #F9EDC3;
+
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin buttonStyle($color, $textColor) {
+  background-color: $color;
+  color: $textColor;
+  border: none;
+  flex:1;
+  justify-content: space-around;
+  height: 20vh;
+  font-size: 10vh;
+  transition: all .25s ease;
+}
+
+@mixin buttonHover($hoverColor) {
+  font-size: 11vh;
+  background-color: $hoverColor;
+}
+.turnOn:hover{
+  @include buttonHover(black);
+}
+.turnOff:hover {
+  @include buttonHover(#F6DB87);
+}
+.turnOn {
+  @include buttonStyle($lightSwitchGrey, $lightSwitchYellow);
+}
+
+.turnOff {
+  @include buttonStyle($lightSwitchYellow, $lightSwitchGrey);
+}
+
+.buttonContainer {
+  @include flexContainer(row);
+}
+
+.container {
+  @include flexContainer(column);
+  height:100vh;
+}
+
+h1 {
+  font-size: 20vh;
+  margin: auto;
+}
+.disabled {
+  pointer-events: none;
+}
